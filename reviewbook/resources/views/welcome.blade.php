@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome</title>
-</head>
-<body>
-    <h1>Selamat Datang {{ $firstName }} {{ $lastName }}</h1>
-    <p>Terima kasih telah bergabung di SanberBook. Social Media kita bersama!</p>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title', 'Welcome')
+
+@section('content')
+    <h1 class="page-title">DASHBOARD</h1>
+
+    <h2>Selamat Datang {{ $firstName }} {{ $lastName }}</h2>
+    <p>Terima kasih telah bergabung di SanberBook. Social Media kita bersama</p>
+@endsection
