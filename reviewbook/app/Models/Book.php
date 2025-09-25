@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Book extends Model
 {
-    public function profile()
+    public function genre()
 {
-    return $this->hasOne(Profile::class);
+    return $this->belongsTo(Genre::class);
 }
 
 public function comments()
